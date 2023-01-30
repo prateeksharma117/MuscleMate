@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginRight="@dimen/_10sdp"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_10sdp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_250sdp"
+        app:cardCornerRadius="@dimen/_7sdp"
+        >
+        <ImageView
+            android:id="@+id/PlanImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/advancedyoga"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/mainText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Advanced Plan"
+            android:textStyle="bold"
+            android:textColor="#67da67"
+            android:textSize="@dimen/_25ssp"
+            android:gravity="center"
+            android:padding="@dimen/_20sdp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="30 Days"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="@dimen/_15ssp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_30sdp"/>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Finish with a few minutes of savasana to relax and release tension from the body."
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="@dimen/_11ssp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_60sdp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:text="Start"
+            android:textColor="#fff"
+            android:textSize="@dimen/_10ssp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_100sdp"
+            android:background="@drawable/button"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:drawableEnd="@drawable/ic_baseline_done_all_24"
+            android:padding="@dimen/_10sdp"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".TranningFragment"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/planRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_40sdp"/>
+
+        <TextView
+            android:id="@+id/challenge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/planRecyclerView"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="CHALLENGE"
+            android:textColor="#000"
+            android:textSize="@dimen/_17sdp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fullBody"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_below="@+id/challenge"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/fullbody"
+                android:scaleType="centerCrop"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/nofillstar"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_gravity="bottom"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="FULL BODY"
+                android:textColor="#fff"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/lowerBody"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_below="@+id/fullBody"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/lowebody"
+                android:scaleType="centerCrop"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/nofillstar"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_gravity="bottom"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="LOWER BODY"
+                android:textColor="#fff"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/beginner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lowerBody"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="Beginner"
+            android:textColor="#000"
+            android:textSize="@dimen/_17sdp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/beginnerAbs"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_below="@+id/beginner"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/beginnerabs"
+                android:scaleType="centerCrop"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/starone"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_gravity="bottom"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="ABS BEGINNER"
+                android:textColor="#fff"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/beginnerchest"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_below="@+id/beginnerAbs"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/beginnerchest"
+                android:scaleType="centerCrop"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/starone"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_gravity="bottom"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="CHEST BEGINNER"
+                android:textColor="#fff"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/beginnerArm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_below="@+id/beginnerchest"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/beginnerarm"
+                android:scaleType="centerCrop"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/starone"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_gravity="bottom"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="ARM BEGINNER"
+                android:textColor="#fff"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/beginnerLeg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_below="@+id/beginnerArm"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/beginnerleg"
+                android:scaleType="centerCrop"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/starone"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_gravity="bottom"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="LEG BEGINNER"
+                android:textColor="#fff"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/beginnerShoulder"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_below="@+id/beginnerLeg"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/beginnershoulder"
+                android:scaleType="centerCrop"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/starone"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_gravity="bottom"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="SHOULDER BEGINNER"
+                android:textColor="#fff"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/beginnerBack"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_below="@+id/beginnerShoulder"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/beginnerback"
+                android:scaleType="centerCrop"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/starone"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_gravity="bottom"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="BACK BEGINNER"
+                android:textColor="#fff"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/intermediate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/beginnerBack"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="INTERMEDIATE"
+            android:textColor="#000"
+            android:textSize="@dimen/_17sdp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/intermediateAbs"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_below="@+id/intermediate"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/intermediateabs"
+                android:scaleType="centerCrop"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/startwo"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_gravity="bottom"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="ABS INTERMEDIATE"
+                android:textColor="#fff"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/intermediateChest"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_below="@+id/intermediateAbs"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/intermediatechest"
+                android:scaleType="centerCrop"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/startwo"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_gravity="bottom"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="CHEST INTERMEDIATE"
+                android:textColor="#fff"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/intermediateArm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_below="@+id/intermediateChest"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/intermediatearm"
+                android:scaleType="centerCrop"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/startwo"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_gravity="bottom"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="ARM INTERMEDIATE"
+                android:textColor="#fff"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/intermediateLeg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_below="@+id/intermediateArm"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/intermediateleg"
+                android:scaleType="centerCrop"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/startwo"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_gravity="bottom"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="LEG INTERMEDIATE"
+                android:textColor="#fff"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/intermediateShoulder"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_below="@+id/intermediateLeg"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/intermediateshoulder"
+                android:scaleType="centerCrop"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/startwo"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_gravity="bottom"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="SHOULDER INTERMEDIATE"
+                android:textColor="#fff"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/intermediateBack"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_below="@+id/intermediateShoulder"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/intermediateback"
+                android:scaleType="centerCrop"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/startwo"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_gravity="bottom"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="BACK INTERMEDIATE"
+                android:textColor="#fff"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/advanced"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/intermediateBack"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="ADVANCED"
+            android:textColor="#000"
+            android:textSize="@dimen/_17sdp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/advancedAbs"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_below="@+id/advanced"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/advancedabs"
+                android:scaleType="centerCrop"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/starthree"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_gravity="bottom"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="ABS ADVANCED"
+                android:textColor="#fff"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/advancedChest"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_below="@+id/advancedAbs"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/advancedchest"
+                android:scaleType="centerCrop"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/starthree"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_gravity="bottom"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="CHEST ADVANCED"
+                android:textColor="#fff"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/advancedArm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_below="@+id/advancedChest"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/advancedarm"
+                android:scaleType="centerCrop"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/starthree"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_gravity="bottom"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="ARM ADVANCED"
+                android:textColor="#fff"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/advancedLeg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_below="@+id/advancedArm"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/advancedleg"
+                android:scaleType="centerCrop"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/starthree"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_gravity="bottom"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="LEG ADVANCED"
+                android:textColor="#fff"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/advancedShoulder"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_below="@+id/advancedLeg"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/advancedshoulder"
+                android:scaleType="centerCrop"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/starthree"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_gravity="bottom"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="SHOULDER ADVANCED"
+                android:textColor="#fff"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/advancedBack"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_below="@+id/advancedShoulder"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/advancedback"
+                android:scaleType="centerCrop"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/starthree"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_gravity="bottom"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="BACK ADVANCED"
+                android:textColor="#fff"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+
+
+
+</ScrollView>

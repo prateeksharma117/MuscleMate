@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Onboarding"
+    android:padding="@dimen/_10sdp">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/onBordViewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_alignParentBottom="true">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/letGetStarted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#67da67"
+            android:text="lets get started"
+            android:textSize="@dimen/_13sdp"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/dotsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:padding="@dimen/_20sdp"
+            android:layout_centerInParent="true"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/nextBtn"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:drawableEnd="@drawable/forward"
+            android:paddingBottom="@dimen/_5sdp"
+            android:background="#00000000"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/previousBtn"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:drawableEnd="@drawable/previous"
+            android:paddingBottom="@dimen/_5sdp"
+            android:background="#00000000"
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Muscle Mate</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="OpenDrawer">Open navigation Drawer</string>
+    <string name="CloseDrawer">Close navigation Drawer</string>
+    <string name="onboardHeading1">TRAINING</string>
+    <string name="onboardHeading2">YOGA</string>
+    <string name="onboardHeading3">DIET</string>
+    <string name="onboardHeading4">PROGRESS</string>
+    <string name="onboardHeading5">START</string>
+    <string name="onboardDescription1">Training the body refers to the process of engaging in regular physical activity and exercise in order to improve overall fitness, strength, and health. This can include a variety of activities such as cardio, strength training, stretching, and flexibility exercises.</string>
+    <string name="onboardDescription2">Yoga is an ancient practice that originated in India and involves physical postures, breathing exercises, and meditation. The goal of yoga is to bring balance, harmony and well-being to the mind, body, and spirit. Practicing yoga can improve physical and mental health, reduce stress, and increase self-awareness and spiritual growth.</string>
+    <string name="onboardDescription3">A diet is a plan or regimen of eating and drinking, usually with a specific goal in mind, such as weight loss, improved health, or increased energy. A diet generally includes a variety of foods that provide the necessary nutrients for the body such as carbohydrates, proteins, fats, vitamins and minerals. A healthy diet typically includes a balance of different food groups.</string>
+    <string name="onboardDescription4">A progress tracker in an exercise app is a feature that allows users to track their progress over time. This can include a variety of different metrics such as weight, body measurements, strength, endurance, and other fitness-related goals.A progress tracker can also include features such as reminders, notifications, and alerts to help users stay on track with their goals.</string>
+    <string name="onboardDescription5">With every step, we strive to be,Stronger, fitter, and wilder, free.Our bodies, a canvas, to be painted,With the colors of health, never tainted.The journey is long, but the path is clear,With each day, we draw ever near.To the peak of fitness and health,Where our bodies and minds can find wealth.With every workout, we push through pain,And emerge victorious, again and again.</string>
+</resources>

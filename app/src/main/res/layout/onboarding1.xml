@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_10sdp"
+    >
+
+
+    <ImageView
+        android:id="@+id/onboardImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:src="@drawable/onbord1" />
+
+    <TextView
+            android:id="@+id/onboardText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Text View"
+            android:textStyle="bold"
+            android:textSize="@dimen/_25sdp"
+            android:layout_below="@+id/onboardImage"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/onboarText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You have a love for adventure and are always looking for new experiences. You have a knack for languages and can fluently speak several different ones. You have a passion for music and enjoy playing the guitar in your free time. You have a kind heart and always go out of your way to help others."
+            android:textStyle="bold"
+            android:textSize="@dimen/_13sdp"
+            android:layout_below="@+id/onboardText1"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center"
+            />
+
+    </RelativeLayout>
